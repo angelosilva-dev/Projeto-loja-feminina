@@ -1,0 +1,72 @@
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+header#cabecalho #cabecalho-whatsapp {
+  width: 100%;
+  background-color: #d4c0a1;
+  height: 30px;
+}
+header#cabecalho #cabecalho-whatsapp p {
+  font-size: 0.85em;
+}
+header#cabecalho #cabecalho-whatsapp p a {
+  color: #000000;
+}
+header#cabecalho div#cabecalho-logo {
+  padding: 20px 0 20px 0;
+  border-bottom: 1px solid #d4c0a1;
+}
+header#cabecalho div#cabecalho-logo h1 {
+  margin: 0;
+}
+header#cabecalho div#cabecalho-logo ul#menu-social-midias {
+  margin: 0;
+}
+header#cabecalho div#cabecalho-logo ul#menu-social-midias li {
+  display: inline;
+}
+header#cabecalho div#cabecalho-logo ul#menu-social-midias i {
+  font-size: 1.5em;
+  color: #d4c0a1;
+  margin-right: 5px;
+}
+header#cabecalho div#cabecalho-logo ul#menu-social-midias i:hover {
+  color: #af9a7a;
+}
+header#cabecalho nav#menu {
+  border-bottom: 1px solid #d4c0a1;
+  padding: 0;
+}
+header#cabecalho nav#menu ul li a {
+  font-size: 0.9em;
+  color: #000000;
+  text-transform: uppercase;
+  line-height: 20px;
+  letter-spacing: 2px;
+}
+header#cabecalho nav#menu ul li a:hover {
+  background-color: #d4c0a1;
+  color: white;
+}
+
+main#principal {
+  width: 100%;
+}
+main#principal section#slide-show img {
+  width: 100%;
+}
+main#principal section#categorias {
+  width: 100%;
+  padding: 20px;
+}
+main#principal section#categorias .box-categorias {
+  background-color: #eee5d7;
+  padding: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
