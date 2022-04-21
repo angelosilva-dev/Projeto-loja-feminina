@@ -6,17 +6,34 @@ $cor-links-menu: #000000;
 $tamanhoSpan: 0.85em;
 $tamanhoIcones: 1.5em;
 $tamanhoLinksMenu: 0.90em;
+$tamanhoH1:2.5em;
+$tamanhoH2:2.2em;
+$tamanhoH3:1.5em;
+$tamanhoH4:1.0em;
+$tamanhoH5:0.85em;
+$tamanhoH6: 0.75em;
 
 $espacamentoHeaderLogo: 20px 0 20px 0;
 
-
+// Resetando valores dos elementos
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 a{
     text-decoration: none;
 }
 ul{
     list-style: none;
+    margin: 0;
+    padding: 0;
+}
+button{
+    border: none;
 }
 
+// Estilização do Cabeçalho
 header#cabecalho{
     #cabecalho-whatsapp{
         width: 100%;
@@ -72,24 +89,175 @@ header#cabecalho{
 
 }
 
+// Estilização do conteudo principal
 main#principal{
     width: 100%;
+    // Seção de Slide Show
     section#slide-show img{
         width: 100%;
     }
-
+    // Seçao de categorias
     section#categorias{
         width: 100%;
         padding: 20px;
 
         .box-categorias{
             background-color: #eee5d7;
-            padding: 10px;
-            
+            padding: 20px;
+            .card{
+                background-color: #958061;
+                color: white;
+            }
+        }
+    }
+
+    // Seção de produtos em destaque
+    section#destaques{
+        margin-bottom: 30px;
+        text-align: center;
+        h1{
+      
+            margin-bottom: 20px;
+        }
+    
+        .img-destaques{
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        h6{
+            font-size: $tamanhoH6;
+            letter-spacing: 1px;
+        }
+        p{
+            font-weight: bold;
+            font-size: 1.5em;
+            margin: 0;
+        }
+        span{
+            font-size: 0.85em;
+        }
+        button{
+            display: block;
+            background: none;
+            border: solid 2px $cor-site;
+            padding: 5px 15px 5px 15px;
+            margin-top: 15px;
+            border-radius: 4px;
+            i{
+                color: rgb(87, 210, 87);
+                font-size: 1.2em;
+            }
+        }
+        button:hover{
+            background-color: $cor-site;
+            color: white;
         }
     }
 }
+// Fim do conteudo principal
 
 
+// Estilização do Rodapé
+footer#rodape{
+    margin-top: 50px;
+    padding: 30px;
+    background-color: $cor-site;
+
+    h3,h4,h5 ,h6{
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    h6{
+        font-size: $tamanhoH6;
+        margin-bottom: 10px;
+    }
+    h4{
+        font-size: $tamanhoH4;
+    }
+    // Alinhamento dos textos da forma de pagamento, horario de atendimento e copyright
+    .rodape-copyright, .rodape-formas-pagamento, .rodape-horario-atd{
+        text-align: center;
+    }
+    // Estilização das informações institucionais
+    .rodape-info{
+        border-bottom: 1px solid black;
+        padding: 30px 0 30px 0;
+        a{
+            color: $cor-links-menu;
+            font-size: 0.75em;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        a:hover{
+            color: #695639;
+        }
+        .rodape-contato span {
+            font-size: 0.85em;
+            text-transform: lowercase;
+        }
+        .rodape-contato ul{
+            display: inline-block;
+        }
+        .rodape-contato i{
+            font-size: 1em;
+        }
+        .rodape-contato li{
+            margin-bottom: 10px;
+        }
+        .rodape-contato button{
+            background-color: #000000;
+            padding: 10px 8px 10px 8px;
+            color: white;
+        }
+    }
+    // Estilização das midiais sociais do rodapé
+    .rodape-social-midias{
+        li{
+            margin-bottom: 10px;
+            a{
+                font-size: 0.85em;
+                text-transform: lowercase;
+            }
+            i{
+                font-size: 1.3em;
+
+            }
+
+        }
+    }
+
+    // EStilização da forma de pagamento - rodapé
+    .rodape-formas-pagamento, .rodape-horario-atd{
+        margin-top: 30px;
+    }
+    .rodape-formas-pagamento{
+        i{
+            font-size: 1.5em;
+            margin: 3px;
+        }
+        h6{
+            font-size: $tamanhoH6;
+        }
+    }
+    .rodape-horario-atd{
+        margin-bottom: 50px;
+        span{
+            font-size: 0.70em;
+        }
+    }
+    .rodape-copyright{
+        border-top: 1px solid black;
+
+        span{
+            font-size: 0.65em;
+            a{
+                color:rgb(64, 49, 30)
+            }
+            a:hover{
+                color: white
+            }
+        }
+    }
+}
 
 

@@ -1,9 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 a {
   text-decoration: none;
 }
 
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
 }
 
 header#cabecalho #cabecalho-whatsapp {
@@ -66,7 +78,139 @@ main#principal section#categorias {
 }
 main#principal section#categorias .box-categorias {
   background-color: #eee5d7;
-  padding: 10px;
+  padding: 20px;
+}
+main#principal section#categorias .box-categorias .card {
+  background-color: #958061;
+  color: white;
+}
+main#principal section#destaques {
+  margin-bottom: 30px;
+  text-align: center;
+}
+main#principal section#destaques h1 {
+  margin-bottom: 20px;
+}
+main#principal section#destaques .img-destaques {
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+main#principal section#destaques h6 {
+  font-size: 0.75em;
+  letter-spacing: 1px;
+}
+main#principal section#destaques p {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin: 0;
+}
+main#principal section#destaques span {
+  font-size: 0.85em;
+}
+main#principal section#destaques button {
+  display: block;
+  background: none;
+  border: solid 2px #d4c0a1;
+  padding: 5px 15px 5px 15px;
+  margin-top: 15px;
+  border-radius: 4px;
+}
+main#principal section#destaques button i {
+  color: #57d257;
+  font-size: 1.2em;
+}
+main#principal section#destaques button:hover {
+  background-color: #d4c0a1;
+  color: white;
+}
+
+footer#rodape {
+  margin-top: 50px;
+  padding: 30px;
+  background-color: #d4c0a1;
+}
+footer#rodape h3, footer#rodape h4, footer#rodape h5, footer#rodape h6 {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+footer#rodape h6 {
+  font-size: 0.75em;
+  margin-bottom: 10px;
+}
+footer#rodape h4 {
+  font-size: 1em;
+}
+footer#rodape .rodape-copyright, footer#rodape .rodape-formas-pagamento, footer#rodape .rodape-horario-atd {
+  text-align: center;
+}
+footer#rodape .rodape-info {
+  border-bottom: 1px solid black;
+  padding: 30px 0 30px 0;
+}
+footer#rodape .rodape-info a {
+  color: #000000;
+  font-size: 0.75em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+footer#rodape .rodape-info a:hover {
+  color: #695639;
+}
+footer#rodape .rodape-info .rodape-contato span {
+  font-size: 0.85em;
+  text-transform: lowercase;
+}
+footer#rodape .rodape-info .rodape-contato ul {
+  display: inline-block;
+}
+footer#rodape .rodape-info .rodape-contato i {
+  font-size: 1em;
+}
+footer#rodape .rodape-info .rodape-contato li {
+  margin-bottom: 10px;
+}
+footer#rodape .rodape-info .rodape-contato button {
+  background-color: #000000;
+  padding: 10px 8px 10px 8px;
+  color: white;
+}
+footer#rodape .rodape-social-midias li {
+  margin-bottom: 10px;
+}
+footer#rodape .rodape-social-midias li a {
+  font-size: 0.85em;
+  text-transform: lowercase;
+}
+footer#rodape .rodape-social-midias li i {
+  font-size: 1.3em;
+}
+footer#rodape .rodape-formas-pagamento, footer#rodape .rodape-horario-atd {
+  margin-top: 30px;
+}
+footer#rodape .rodape-formas-pagamento i {
+  font-size: 1.5em;
+  margin: 3px;
+}
+footer#rodape .rodape-formas-pagamento h6 {
+  font-size: 0.75em;
+}
+footer#rodape .rodape-horario-atd {
+  margin-bottom: 50px;
+}
+footer#rodape .rodape-horario-atd span {
+  font-size: 0.7em;
+}
+footer#rodape .rodape-copyright {
+  border-top: 1px solid black;
+}
+footer#rodape .rodape-copyright span {
+  font-size: 0.65em;
+}
+footer#rodape .rodape-copyright span a {
+  color: #40311e;
+}
+footer#rodape .rodape-copyright span a:hover {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
