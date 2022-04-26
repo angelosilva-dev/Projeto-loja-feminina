@@ -112,7 +112,7 @@ main#principal{
     }
 
     // Seção de produtos em destaque
-    section#destaques{
+    section#destaques, section#produtos{
         margin-bottom: 30px;
         text-align: center;
         h1{
@@ -162,7 +162,6 @@ footer#rodape{
     margin-top: 50px;
     padding: 30px;
     background-color: $cor-site;
-
     h3,h4,h5 ,h6{
         letter-spacing: 2px;
         text-transform: uppercase;
@@ -180,7 +179,7 @@ footer#rodape{
     }
     // Estilização das informações institucionais
     .rodape-info{
-        border-bottom: 1px solid black;
+        border-bottom: 1px dotted black;
         padding: 30px 0 30px 0;
         a{
             color: $cor-links-menu;
@@ -208,6 +207,11 @@ footer#rodape{
             background-color: #000000;
             padding: 10px 8px 10px 8px;
             color: white;
+            border: 1px solid black;
+        }
+        .rodape-contato button:hover{
+            background-color: white;
+            color: black;
         }
     }
     // Estilização das midiais sociais do rodapé
@@ -246,7 +250,7 @@ footer#rodape{
         }
     }
     .rodape-copyright{
-        border-top: 1px solid black;
+        border-top: 1px dotted black;
 
         span{
             font-size: 0.65em;
@@ -257,6 +261,74 @@ footer#rodape{
                 color: white
             }
         }
+    }
+}
+
+// EStilização da página de sobre
+section#sobre{
+    padding: 50px 0 50px 0;
+    text-align: center;
+    .caixa-artigo{
+        padding: 10px 25px 15px 25px;
+        h1{
+            font-size: $tamanhoH1;
+            letter-spacing: 3px;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+        p{
+            font-size: 0.75em;
+            letter-spacing: 1px;
+        }
+    }
+    img{
+        border-radius: 12px;
+        box-shadow: 1px 2px 2px 2px rgba(0,0,0, 0.2);
+    }
+}
+
+// Estilização da página de produtos
+section#produtos{
+    padding: 50px 0 50px 0;
+    h1{
+        font-size: $tamanhoH1;
+        letter-spacing: 3px;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+    }
+    img{
+        border-radius: 12px;
+        width: 80%;
+        margin: 30px 0 10px 0;
+    }
+
+    .order{
+        background: transparent;
+    }
+}
+
+// EStilização da página de contato
+section#contato{
+    padding: 50px 0 50px 0;
+    text-align: center;
+    h1{
+        font-size: $tamanhoH1;
+        letter-spacing: 3px;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+    }
+    h6{
+        font-size: $tamanhoH6;
+        letter-spacing: 3px;
+        margin-top: 30px;
+        text-transform: uppercase; 
+    }
+    p{
+        font-size: 0.75em;
+        letter-spacing: 1px;
+    } 
+    a{
+        color: black;
     }
 }
 

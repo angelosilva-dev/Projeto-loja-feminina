@@ -71,117 +71,37 @@
     </header>
     <!-- Fim do Cabeçalho -->
 
-    <!-- Inicio do conteudo principal do site - slideShow, Seções de destaques, categorias e banners -->
+    <!-- Inicio do conteudo Sobre da empresa -->
     <main id="principal">
-        <section id="slide-show"><!--Inicio do Slide Show-->
-            <img src="assets/img/slideshow1.png" alt="">
-        </section><!--Fim do Slide Show-->
-
-        <section id="categorias" class="container-xxl"><!-- Seção de categorias-->
-            <div class="row box-categorias">
-                <div class="col-2">
-                    <div class="card">
-                        <img src="assets/img/categorias/blusas.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h3 class="text-center">Blusas</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="card">
-                        <img src="assets/img/categorias/calçasjeans.jpg"  class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h3 class="text-center">Calças</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="card">
-                        <img src="assets/img/categorias/shorts.jpg"   class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h3  class="text-center">Shorts</h3>                        
-                        </div>
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="card">
-                        <img src="assets/img/categorias/saias.jpg"   class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h3 class="text-center">Saias</h3>                        
-                        </div>
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="card">
-                        <img src="assets/img/categorias/macacao.jpg"   class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h3 class="text-center">Macacão</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="card">
-                        <img src="assets/img/categorias/conjuntos.jpg"   class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h3  class="text-center">Conjuntos</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section><!-- Fim da Seção de categorias-->
-        
-        <section id="destaques"><!-- Seção de destaques-->
+        <section id="produtos">
             <div class="container-xxl">
-                <h1 class="text-center">Destaques</h1>
-                <div class="row">
-                    <div class="col-3">
-                        <img src="assets/img/produtos/blusapreta.jpg" class="img-fluid img-destaques" alt="">
-                        <h6>Blusa Social Preta</h6>
-                        <p>R$ 129,90</p>
-                        <span>Ou em 6X sem juros</span>
-                        <div class="d-flex justify-content-center">
-                            <button>Comprar <i class="fa-brands fa-whatsapp"></i></button>
-                        </div>
+                <h1>Conheça toda nossa coleção</h1>
+
+                <div class="d-flex flex-row justify-content-center">
+                    <div class="allproducts">
+                        <span id="contador-de-produtos"></span>
                     </div>
-                    <div class="col-3">
-                        <img src="assets/img/produtos/jaqueta1.jpg" class="img-fluid img-destaques" alt="">
-                        <h6>Jaqueta preta de couro</h6>
-                        <p>R$ 229,90</p>
-                        <span>Ou em 6X sem juros</span>
-                        <div class="d-flex justify-content-center">
-                            <button>Comprar <i class="fa-brands fa-whatsapp"></i></button>
-                        </div>
+                    &nbsp; &nbsp;
+                    <div class="order">
+                        <label for="produtos"> Ordenar por:</label>
+                        <select id="ordenacao-produtos" name="produtos">
+                            <option class="item-ordenacao" value="desejados">mais desejados</option>
+                            <option class="item-ordenacao" value="menorpreco">menor preço</option>
+                            <option class="item-ordenacao" value="maiorpreco">maior preço</option>
+                            <option class="item-ordenacao" value="ofertas">ofertas</option>
+                        </select>
                     </div>
-                    <div class="col-3">
-                        <img src="assets/img/produtos/macacaoamarelo.jpg" class="img-fluid img-destaques" alt="">
-                        <h6>Macacão amarelo</h6>
-                        <p>R$ 169,90</p>
-                        <span>Ou em 6X sem juros</span>
-                        <div class="d-flex justify-content-center">
-                            <button>Comprar <i class="fa-brands fa-whatsapp"></i></button>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <img src="assets/img/produtos/vestidorosa.jpg" class="img-fluid img-destaques" alt=""> 
-                        <h6>Vestido listrado</h6>
-                        <p>R$ 189,90</p>
-                        <span>Ou em 6X sem juros</span>
-                        <div class="d-flex justify-content-center">
-                            <button>Comprar <i class="fa-brands fa-whatsapp"></i></button>
-                        </div>
-                    </div>
+
+                </div>
+
+                <div class="produtos row">
+
                 </div>
             </div>
-        </section><!-- Fim da Seção de destaques-->
-
-        <section id="banner-propaganda"><!--Inicio do banner de propaganda-->
-            <div>
-                <img src="assets/img/banners/banner.jpg" height="300" class="img-fluid" alt="">
-            </div>
-        </section><!--Fim di banner de propaganda-->
+        </section>
     </main>
-    <!-- Fim do conteudo principal do site - slideShow, Seções de destaques, categorias e banners -->
-
+    
+    
     <!-- Inicio do rodapé -->
     <footer id="rodape">
         <section class="container-xxl rodape-info"><!-- Inicio - Rodapé - Seção de Informações principais da empresa-->
@@ -256,6 +176,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="assets/bootstrap-5.1.3/js/bootstrap.min.js"></script>
     <script src="assets/js/produto.js"></script>
-    <script src="assets/js/appSite.js"></script>
+    <script src="assets/js/appProdutos.js"></script>
+
 </body>
 </html>
