@@ -8,7 +8,7 @@ $tamanhoIcones: 1.5em;
 $tamanhoLinksMenu: 0.90em;
 $tamanhoH1:2.5em;
 $tamanhoH2:2.2em;
-$tamanhoH3:1.5em;
+$tamanhoH3:1.3em;
 $tamanhoH4:1.0em;
 $tamanhoH5:0.85em;
 $tamanhoH6: 0.75em;
@@ -107,6 +107,12 @@ main#principal{
             .card{
                 background-color: #958061;
                 color: white;
+                h3{
+                    font-size: $tamanhoH3;
+                }
+            }
+            .card:hover{
+                cursor: pointer;
             }
         }
     }
@@ -136,8 +142,7 @@ main#principal{
         span{
             font-size: 0.85em;
         }
-        button{
-            display: block;
+        .btn-todosProdutos, button{
             background: none;
             border: solid 2px $cor-site;
             padding: 5px 15px 5px 15px;
@@ -148,9 +153,13 @@ main#principal{
                 font-size: 1.2em;
             }
         }
-        button:hover{
+        .btn-todosProdutos:hover, button:hover{
             background-color: $cor-site;
             color: white;
+        }
+
+        .btn-todosProdutos{
+            margin-top: 50px;
         }
     }
 }

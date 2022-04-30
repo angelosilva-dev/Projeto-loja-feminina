@@ -84,6 +84,12 @@ main#principal section#categorias .box-categorias .card {
   background-color: #958061;
   color: white;
 }
+main#principal section#categorias .box-categorias .card h3 {
+  font-size: 1.3em;
+}
+main#principal section#categorias .box-categorias .card:hover {
+  cursor: pointer;
+}
 main#principal section#destaques, main#principal section#produtos {
   margin-bottom: 30px;
   text-align: center;
@@ -107,21 +113,23 @@ main#principal section#destaques p, main#principal section#produtos p {
 main#principal section#destaques span, main#principal section#produtos span {
   font-size: 0.85em;
 }
-main#principal section#destaques button, main#principal section#produtos button {
-  display: block;
+main#principal section#destaques .btn-todosProdutos, main#principal section#destaques button, main#principal section#produtos .btn-todosProdutos, main#principal section#produtos button {
   background: none;
   border: solid 2px #d4c0a1;
   padding: 5px 15px 5px 15px;
   margin-top: 15px;
   border-radius: 4px;
 }
-main#principal section#destaques button i, main#principal section#produtos button i {
+main#principal section#destaques .btn-todosProdutos i, main#principal section#destaques button i, main#principal section#produtos .btn-todosProdutos i, main#principal section#produtos button i {
   color: #57d257;
   font-size: 1.2em;
 }
-main#principal section#destaques button:hover, main#principal section#produtos button:hover {
+main#principal section#destaques .btn-todosProdutos:hover, main#principal section#destaques button:hover, main#principal section#produtos .btn-todosProdutos:hover, main#principal section#produtos button:hover {
   background-color: #d4c0a1;
   color: white;
+}
+main#principal section#destaques .btn-todosProdutos, main#principal section#produtos .btn-todosProdutos {
+  margin-top: 50px;
 }
 
 footer#rodape {
