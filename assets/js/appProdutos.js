@@ -5,8 +5,6 @@ if(parametros != null){
     nomeParametros = parametros.get('categoria')
 }
 
-
-
 // Declaração de variaveis dos elementos HTML
 const contadorProdutos = document.getElementById('contador-de-produtos')
 const ordenacaoProdutos = document.querySelector('#ordenacao-produtos')
@@ -36,7 +34,7 @@ function mostrarTodosProdutos(produtos) {
     }
 
     secaoProdutos.innerHTML += '</div>'
-    contadorProdutos.textContent = `Todos os produtos(${count} produtos)`
+    contadorProdutos.textContent = `${count} produto(s) encontrado(s)`
 
     return secaoProdutos   
 }
@@ -44,7 +42,7 @@ function mostrarTodosProdutos(produtos) {
 function filtrarProdutos(filtro){
     let filtroSelecionado = filtro
     let valorFiltro = ''
-
+    console.log(filtroSelecionado)
     let itensFiltrados = undefined
 
     if(filtroSelecionado == 'desejados'){
@@ -91,6 +89,7 @@ function filtrarProdutos(filtro){
     }else{
         itensFiltrados = produtos.filter(function(produtos){
             if(filtroSelecionado == produtos.categoria)
+
             return produtos
         })
     }
@@ -105,7 +104,8 @@ ordenacaoProdutos.addEventListener("change",function(){
 })
 
 window.addEventListener("DOMContentLoaded",function(){
-    carregaCategorias(produtos)
+    carregaCategorias(categorias)
+    createBtnEventListener()
     if(nomeParametros == null){
         mostrarTodosProdutos(produtos)
     }else{
@@ -114,16 +114,38 @@ window.addEventListener("DOMContentLoaded",function(){
     
 })
 
-function carregaCategorias(produtos){
+function carregaCategorias(categorias){
     let listaCategorias = ''
 
-    for (let currentItem = 0; currentItem < produtos.length; currentItem++) {
-        listaCategorias += `<li><a  id="categoria-${produtos[currentItem].categoria}"  class="dropdown-item links-categorias" >${produtos[currentItem].categoria}</a></li>`
+    for (let currentItem = 0; currentItem < categorias.length; currentItem++) {
+        listaCategorias += `<li><a id="categoria-${categorias[currentItem]}" class="dropdown-item" >${categorias[currentItem]}</a></li>`
     }
+
     menuCategorias.innerHTML = listaCategorias
     return menuCategorias
 }
 
-
-
-
+function createBtnEventListener()
+{
+    let link = document.querySelectorAll('.dropdown-item');
+    for(let item of link){
+        item.addEventListener('click', function(e){
+            itemCategoria = e.currentTarget.id
+            if(itemCategoria == 'categoria-Blusas'){
+                filtrarProdutos('Blusas')
+            }else if(itemCategoria == 'categoria-Calças'){
+                filtrarProdutos('Calças')
+            }else if(itemCategoria == 'categoria-Shorts'){
+                filtrarProdutos('Shorts')
+            }else if(itemCategoria == 'categoria-Saias'){
+                filtrarProdutos('Saias')
+            }else if(itemCategoria == 'categoria-Macacãos'){
+                filtrarProdutos('Macacãos')
+            }else if(itemCategoria == 'categoria-Conjuntos'){
+                filtrarProdutos('Conjuntos')
+            }else if(itemCategoria == 'categoria-Agasalhos'){
+                filtrarProdutos('Agasalhos')
+            }
+        });
+    }
+}
